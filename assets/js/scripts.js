@@ -1,6 +1,6 @@
 
 
-jQuery(function ($) {
+$(function ($) {
 
     'use strict';
 
@@ -36,7 +36,7 @@ jQuery(function ($) {
 
     }());
 
-    
+
 
 
     // -------------------------------------------------------------
@@ -215,7 +215,7 @@ jQuery(function ($) {
     // STELLAR FOR BACKGROUND SCROLLING
     // -------------------------------------------------------------
 
-    $(window).load(function() {
+    $(window).on('load', function() {
 
         if( /Android|webOS|Chrome|Firefox|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 

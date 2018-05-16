@@ -373,11 +373,8 @@ ul.list-check li::before {
 	margin-bottom: 20px;
 }
 
-.intro-sub span{
-    color: #1e5eb2;
-}
+
 .typed_wrap {
-  color: #fff;
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
@@ -388,28 +385,21 @@ ul.list-check li::before {
 
 .typed_wrap h1 {
 	display: inline;
+  color: #38d2e0;
+}
+
+}
+.typed_wrap span {
+	display: inline;
+  color: #ffffff;
 }
 
 /*Add custom cursor so it auto inherits font styles*/
-.typed::after {
-	content: '|';
-	display: inline;
-	-webkit-animation: blink 0.7s infinite;
-	-moz-animation: blink 0.7s infinite;
-	animation: blink 0.7s infinite;
-}
 
 /*Removes cursor that comes with typed.js*/
-.typed-cursor{
-   opacity: 0;
-	display: none;
-}
+
 /*Custom cursor animation*/
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
+
 @-webkit-keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
