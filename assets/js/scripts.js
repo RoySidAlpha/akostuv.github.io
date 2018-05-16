@@ -20,17 +20,6 @@ jQuery(function ($) {
     // Animated scrolling / Scroll Up
     // -------------------------------------------------------------
 
-    (function () {
-        $('a[href*=#about]').bind("click", function(e){
-            var anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $(anchor.attr('href')).offset().top
-            }, 1000);
-            e.preventDefault();
-        });
-    }());
-    
-
 
 
 
@@ -46,6 +35,8 @@ jQuery(function ($) {
         });
 
     }());
+
+    
 
 
     // -------------------------------------------------------------
@@ -109,7 +100,7 @@ jQuery(function ($) {
     // -------------------------------------------------------------
     // Progress Bar
     // -------------------------------------------------------------
- 
+
     $('.skill-progress').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
         if (visible) {
             $.each($('div.progress-bar'),function(){
@@ -118,7 +109,7 @@ jQuery(function ($) {
             $(this).unbind('inview');
         }
     });
-    
+
     // -------------------------------------------------------------
     // More skill
     // -------------------------------------------------------------
@@ -226,8 +217,8 @@ jQuery(function ($) {
 
     $(window).load(function() {
 
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-         
+        if( /Android|webOS|Chrome|Firefox|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
         }else {
             $.stellar({
                 horizontalScrolling: false,
@@ -252,8 +243,3 @@ jQuery(function ($) {
 
     }());
 });
-
-
-
-
-
